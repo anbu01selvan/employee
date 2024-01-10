@@ -1,0 +1,23 @@
+<table>
+    
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>CONTACT NO</th>
+    <th>SALARY</th>
+    <th>EMP-ID</th>
+    <th>SHIFT</th>
+    <th>DESIGNATION</th>
+    <th>EMAIL</th>
+    <tr *ngFor="let a of employee;let i=index">
+        <td>{{i+1}}</td>
+        <td>{{a.name}}</td>
+        <td>{{a.gender}}</td>
+        <td>{{a.contactNo}}</td>
+        <td>{{a.salary}}</td>
+        <td>{{a.empId}}</td>
+        <td>{{a.shift}}</td>
+        <td>{{a.designation}}</td>
+        <td>{{a.email}}</td>
+    </tr>
+</table>
